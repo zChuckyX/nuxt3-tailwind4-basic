@@ -1,5 +1,17 @@
 <script setup lang="ts">
-
+useHead({
+    title: 'Contact',
+    meta: [
+        { 
+            name: 'description', 
+            content: 'Home Nuxt 3, Learning' 
+        },
+        {
+            name: 'keywords',
+            content: 'Home, Nuxt 3, Learning Nuxt 3'
+        },
+    ],
+})
 </script>
 
 <template>

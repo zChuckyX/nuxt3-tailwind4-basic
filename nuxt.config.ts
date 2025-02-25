@@ -9,5 +9,11 @@ export default defineNuxtConfig({
     plugins: [
       tailwindcss()
     ]
+  },
+  runtimeConfig: {
+    secretKey: process.env.SECRET_KEY,
+    public: {
+      urlKey: process.env.URL_KEY,
+    }
   }
 })

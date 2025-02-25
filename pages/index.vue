@@ -1,7 +1,24 @@
 <script setup lang="ts">
-const { data: posts, error } = await useWPAPI().getPosts()
 
-console.log(posts)
+const { getPosts } = useWPAPI();
+
+const { data: posts, error } = await getPosts()
+
+//Head Text
+useHead({
+    title: 'Home',
+    meta: [
+        { 
+            name: 'description', 
+            content: 'Home Nuxt 3, Learning' 
+        },
+        {
+            name: 'keywords',
+            content: 'Home, Nuxt 3, Learning Nuxt 3'
+        },
+    ],
+})
+
 </script>
 
 <template>
