@@ -9,7 +9,6 @@ Make sure to install dependencies:
 ```bash
 # bun
 bun install
-npm install tailwindcss @tailwindcss/vite
 ```
 
 ## Development Server
